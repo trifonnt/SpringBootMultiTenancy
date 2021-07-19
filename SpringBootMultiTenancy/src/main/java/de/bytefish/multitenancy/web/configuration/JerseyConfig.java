@@ -7,12 +7,12 @@ package de.bytefish.multitenancy.web.configuration;
 import de.bytefish.multitenancy.web.filters.TenantNameFilter;
 import de.bytefish.multitenancy.web.resources.CustomerResource;
 import org.glassfish.jersey.server.ResourceConfig;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * Jersey Configuration (Resources, Modules, Filters, ...)
  */
-@Component
+@Configuration
 public class JerseyConfig extends ResourceConfig {
 
     public JerseyConfig() {
